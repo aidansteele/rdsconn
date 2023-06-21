@@ -133,7 +133,7 @@ func promptForInstanceId(ctx context.Context, api *rds.Client) (rdstypes.DBInsta
 func listenerAndPort(localPort, remotePort int) (net.Listener, int, error) {
 	if localPort != 0 {
 		l, err := net.Listen("tcp", fmt.Sprintf("localhost:%d", localPort))
-		return l, 0, err
+		return l, localPort, err
 	}
 
 	for port := remotePort; port < remotePort+100; port++ {
