@@ -1,4 +1,4 @@
-# This app no longer works. The AWS service now blocks any ports other than 22 (SSH) and 3389 (RDP). See issue #5 
+# This app no longer works. The AWS service now blocks any ports other than 22 (SSH) and 3389 (RDP). See issue [#5](https://github.com/aidansteele/rdsconn/issues/5)
 
 # rdsconn
 
