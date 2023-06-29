@@ -1,3 +1,5 @@
+# This app no longer works. The AWS service now blocks any ports other than 22 (SSH) and 3389 (RDP). See issue #5 
+
 # rdsconn
 
 On June 14th, 2023 AWS [launched][aws-blog] new connectivity options for
