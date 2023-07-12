@@ -67,6 +67,10 @@ func runProxy(cmd *cobra.Command, args []string) error {
 			return fmt.Errorf(": %w", err)
 		}
 
+		if len(describe.InstanceConnectEndpoints) == 0 {
+			return fmt.Errorf("no instance connect endpoints found for vpc %s", vpcId)
+		}
+
 		endpoint := describe.InstanceConnectEndpoints[0]
 		endpointId = *endpoint.InstanceConnectEndpointId
 	}
